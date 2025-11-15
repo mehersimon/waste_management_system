@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Waste - Green Waste Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🌎 Green<span>Waste</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="alerts.html">Alerts <span class="alert-badge"></span></a></li>
+                <li><a href="add-waste.html" class="active">Add Waste</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Add New Waste Collection</h1>
+        <div class="form-container">
+            <form id="add-waste-form">
+                <div class="form-group">
+                    <label for="location">Select Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">-- Loading Locations --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bin">Select Bin</label>
+                    <select id="bin" name="bin" required>
+                        <option value="">-- Select a Location First --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="staff">Collected By</label>
+                    <select id="staff" name="staff" required>
+                        <option value="">-- Loading Staff --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Waste Weight (kg)</label>
+                    <input type="number" id="weight" name="weight" min="1" required>
+                </div>
+                <button type="submit" class="btn">Add Waste Record</button>
+            </form>
+            <div id="success-message" class="success-message" style="display: none;">
+                <p>Waste added successfully!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

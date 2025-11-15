@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Green Waste Management</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">🌎 Green<span>Waste</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Dashboard</a></li>
+          <li>
+            <a href="alerts.html">Alerts <span class="alert-badge"></span></a>
+          </li>
+          <li><a href="add-waste.html">Add Waste</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Dashboard</h1>
+
+      <section class="dashboard-stats" id="dashboard-stats">
+        <!-- Stats will be loaded here by JavaScript -->
+      </section>
+
+      <button class="btn refresh-btn" id="refresh-btn">
+        <i class="fas fa-sync-alt"></i> Refresh Data
+      </button>
+
+      <h2>Bin Status</h2>
+      <section class="bins-container" id="bins-container">
+        <!-- Bins will be loaded here by JavaScript -->
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
